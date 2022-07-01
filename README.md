@@ -2,7 +2,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div>
-  <h1 align="center">Titulo del Modelo</h1> 
+  <h1 align="center">Modelo Direccionador Fija</h1> 
   </p>
 </div>
 
