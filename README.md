@@ -147,8 +147,20 @@ Describir cómo validar que las fuentes estén actualizadas antes de ejecutar la
 <div id="ejecutar-replica"></div>
 
 ### 3.3. Pasos para ejecutar la réplica
+  1.  Clonar el repositorio:
+  
+  git clone https://github.com/advanced-analytics-tdp/COB-B2C-DIRECCIONADOR.git
+  
+  2.  Activar el environment AA
+  
+  conda activate dev_avybd
+  
+  3.Ingresar al directorio principal COB-B2C-T1-MOVIL
+  
+  cd COB-B2C-DIRECCIONADOR
+  
+  
 
-Detallar el paso a paso para la réplica del modelo. Especificar ruta del objeto, scripts, shells, notebooks, etc.
 
 <p align="right">(<a href="#top">inicio</a>)</p>
 
