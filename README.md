@@ -66,6 +66,8 @@ Elementos de red: HFC (trobas) y FTTH (divicaus). Ya no se vende la tecnología 
 
 ### 1.6. Presentación (slides) 
 
+[Presentacion modelo direccionador](https://github.com/ownmate15/COD-B2C-DIRECCIONAOR-FIJA/blob/main/Replica/PPT_Direccionador_modelo.pptx)
+
 <div id="metodologia"></div>
 
 ## 2. Metodología
@@ -149,21 +151,26 @@ Describir cómo validar que las fuentes estén actualizadas antes de ejecutar la
 ### 3.3. Pasos para ejecutar la réplica
   1.  Clonar el repositorio:
   
-  git clone https://github.com/advanced-analytics-tdp/COB-B2C-DIRECCIONADOR.git
+    git clone https://github.com/advanced-analytics-tdp/COB-B2C-DIRECCIONADOR.git
   
   2.  Activar el environment AA
   
-  conda activate dev_avybd
+    conda activate dev_avybd
   
   3.Ingresar al directorio principal COB-B2C-T1-MOVIL
   
-  cd COB-B2C-DIRECCIONADOR
+    cd COB-B2C-DIRECCIONADOR
   
-  4.  Configurar las fechas de emisión y vencimiento según cronograma en [main_conf.yaml](https://github.com/ownmate15/COD-B2C-DIRECCIONAOR-FIJA/blob/main/Replica/main_conf_direccionador.yaml)
+  4.  Configurar el periodo, la semana y planos compartidos según cronograma en [main_conf.yaml](https://github.com/ownmate15/COD-B2C-DIRECCIONAOR-FIJA/blob/main/Replica/main_conf_direccionador.yaml)
+   
+    ruta_mapa: '/srv/BigData/dev_sandbox/AA_COBRANZA/FERBI/DIRECCIONADOR/data/Capas_20220504.gdb'
+    ruta_saturacion: 'TROBAS con ocup. mayor a 80% Down - S21.xlsx'
+    semana: '21'
+    periodo_m1: '2022-06-01'
   
   5.  Ejecutar el script main.py
   
-  nohup python -u main_direcciondor.py &
+    nohup python -u main_direcciondor.py &
 
 
 <p align="right">(<a href="#top">inicio</a>)</p>
