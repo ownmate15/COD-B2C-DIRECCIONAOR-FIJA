@@ -1,0 +1,26 @@
+model-name: DIRECCIONADOR
+
+ruta_mapa: '/srv/BigData/dev_sandbox/AA_COBRANZA/FERBI/DIRECCIONADOR/data/Capas_20220504.gdb'
+ruta_saturacion: 'TROBAS con ocup. mayor a 80% Down - S21.xlsx'
+semana: '21'
+periodo_m1: '2022-06-01'
+
+teradata-credentials:
+  user: 'ic_dgarciaau'
+  pass: 'DavidGar#123'
+  
+
+historical-dataset-table:
+  name:
+  dbms: teradata
+  procedure-to-generate-matriz:
+    name: DBI_MIN.SP_ACOB_MATRIX_DIRECCIONADOR
+    parameters:
+      PERIODO_M1 : '209901' #yyyymmdd NO IMPORTA QUE VALOR SE DEJA lo que manda es la emision de arriba declarado
+      DESC_REP: 'Rep01'
+
+  procedure-to-generate-mapas:
+    name: DBI_MIN.SP_ACOB_DIR_MAPAS_00
+    parameters:
+      PERIODO_M1 : '20990' #yyyymmdd NO IMPORTA QUE VALOR SE DEJA lo que manda es la emision de arriba declarado
+      DESC_REP: 'Rep01'
