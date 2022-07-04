@@ -159,7 +159,11 @@ Describir cómo validar que las fuentes estén actualizadas antes de ejecutar la
   
   cd COB-B2C-DIRECCIONADOR
   
+  4.  Configurar las fechas de emisión y vencimiento según cronograma en [main_conf.yaml](https://github.com/ownmate15/COD-B2C-DIRECCIONAOR-FIJA/blob/main/Replica/main_conf_direccionador.yaml)
   
+  5.  Ejecutar el script main.py
+  
+  nohup python -u main_direcciondor.py &
 
 
 <p align="right">(<a href="#top">inicio</a>)</p>
